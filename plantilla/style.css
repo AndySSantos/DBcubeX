@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    background-image: url("fondo.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.contenedor_principal{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+/*Barra de navigacion completa*/
+header{
+    background: #6782ff;
+    width: 15%;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .imagen{
+    align-self: flex-start;
+    padding: 10px;
+    width: 40%;
+}
+header .imagen img{
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: top; 
+}
+
+
+header .menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    margin: 20px 0px;
+} 
+header .menu a:hover{
+    background: #fff;
+    color: #6782ff;
+    border-radius: 5px;
+}
+header .copyright{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+/*contenedor general*/
+.contenedor_general{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenedor_general .fecha{
+    width: 100%;
+    background: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: flex-end;
+}
+.contenedor_general .formulario_insertar , .vista_datos{
+    background: #fff;
+    padding: 10px;
+    width: 98%;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+
+/***Modal desing***/
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width:30%;
+    height: 60%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    justify-content: space-evenly;
+    position: relative;
+    transition: 1s;
+    transform: translateY(0%);
+    /*overflow: hidden;*/
+}
+.modal-close{
+    transform: translateY(-200%);
+}
+.modal img{
+    width: 30%;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 20px;
+}
+.modal .close{
+    align-self: flex-end;
+    color: coral;
+    padding: 10px;
+    cursor: pointer;
+}
+.modal .modal-textos{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-textos p{
+    font-family:Helvetica, sans-serif;
+    padding: 10px;
+}
+.modal-textos p .version{
+    font-size: 10px;
+}
+.prin{
+    color: #fff;
+}
+.contact{
+    color: #471a66;
+    font-weight: bold;
+}
+.valor{
+    font-weight: normal;
+}
